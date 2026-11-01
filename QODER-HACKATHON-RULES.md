@@ -1,44 +1,41 @@
-﻿# Qoder: implement efficiently and verify full rubric coverage
+﻿# Qoder: credit-conscious implementation
 
-The original brief and rubric PDF take precedence over the generated plan.
-Target every full-mark requirement; do not claim a guaranteed score.
+The original brief/rubric is authoritative. Google supplies the overall plan and
+proposed architecture in EXECUTION-PLAN.md in the project root, including its
+rubric checklist. Target every full-mark criterion; never guarantee a score.
 
-- Read the original brief and every rubric page once at the start, including
-  tables/descriptors. Flag unreadable or missing source. Reuse this understanding
-  in the same conversation; revisit relevant criteria rather than repeatedly
-  extracting the entire PDF.
-- Execute the supplied plan continuously. Group related changes. Do not ask for
-  permission after every task, redesign the approach, add optional features or
-  repeat planning. Resolve routine local details using existing project patterns.
-- Read relevant files/callers/contracts only. Search before broad file reads.
-  Preserve working behavior, validation and tests. Avoid unnecessary dependencies
-  and refactoring. Keep tool output focused without losing diagnostic evidence.
-- I run routine setup/install, scaffold commands, servers, builds, lint/typechecks,
-  tests, browser checks and Git writes unless I explicitly delegate a command.
-  You may inspect/search code and read diffs. Write required code/tests/docs.
-- Batch human commands at meaningful milestones: ID, working directory, exact
-  command and expected success. Derive commands from actual scripts/lockfiles;
-  do not guess. Reuse known command IDs instead of reprinting unchanged commands.
-  Mark results pending until I report them. No repeated polling.
-- Continue independent work while my commands run. Do not edit files/configs
-  being checked or rely on pending results. If relevant files change, mark the
-  result outdated and request only affected checks again. Pause when progress
-  depends on my result rather than looping or inventing success.
-- Use my actual failures to fix straightforward errors, then ask me to rerun
-  affected checks. Reuse valid results; do not repeat passing checks unnecessarily.
-- Stop for missing essential facts, a required design change or two unsuccessful
-  repairs of the same failure. Give the exact blocker and attempts made.
-- No sub-agents, repo wiki, external AI calls or narrated edits. Use terse,
-  technically precise prose. Preserve requirements, identifiers and negations.
-  Give brief milestone updates without awaiting a reply.
-- Before finishing, check every original rubric criterion once. Fix scoped gaps
-  within the agreed design and request outstanding human checks. Report one compact
-  complete table IN CHAT ONLY: criterion ID/page | implementation evidence |
-  actual check/result | remaining gap. Attribute my results as human-run; mark
-  pending, outdated, blocked or unverified items explicitly;
-  never invent results or award yourself marks. Do not repeat the table elsewhere.
-- Do not create or maintain audit reports, status files, planning documents or
-  duplicate summaries. Produce any documentation/tests/deliverables explicitly
-  required by the assessment, plus what is necessary to run and verify the work.
-  If later fixes affect a few criteria, report changed rows only; do not regenerate
-  the whole audit unless explicitly requested or a broad change invalidates it.
+- C1 only: read the plan once; inspect relevant starter/manifest/entry/config files
+  for obvious launch blockers and LOCAL FACT TO CHECK items. No full rubric audit,
+  research, broad exploration, commands or implementation. Return READY, READY WITH
+  CORRECTIONS (local C2 fixes), or RETURN TO GOOGLE (paste-ready blocker and minimal
+  recommendation), normally <=100 words. READY is not runtime/design validation.
+- C2: read all original rubric pages/tables once, flag unreadable source and reuse
+  C1 context. Implement through coherent milestones without repeating planning.
+  Resolve local details and concrete errors; preserve valid architecture/contracts.
+  For essential major design changes, give evidence and one recommendation for
+  me/Google; pause dependent work. Check only affected repairs after a correction.
+- Search targeted paths/symbols first. Read relevant excerpts and diffs; expand
+  only when needed. Do not repeatedly scan the repo, re-extract unchanged PDFs or
+  dump lockfiles, generated/vendor/build files, binaries or successful logs.
+- Batch related edits. Reuse working code and installed dependencies. No optional
+  features, unrelated refactors, speculative abstractions, alternative-stack
+  comparisons, sub-agents, repo wikis or external AI calls.
+- I run routine setup/install/scaffold commands, servers, builds, lint/typechecks,
+  tests, browser checks and Git writes unless delegated. You write required code,
+  meaningful tests and assessment docs. Use my Gitea exam remote/branch; preserve
+  required external input URLs. Do not add CI/deployment integrations unless needed.
+- Cue human commands in batches: ID | actual directory | command | success condition.
+  Reuse IDs. Request smallest useful checks first; broader checks for rubric needs
+  or unresolved risk. No redundant reruns or installs without changed inputs/failure.
+  Work independently with checked inputs stable; pause when dependent. No polling.
+- Reuse actual results; label human evidence and pending/outdated checks. Request
+  affected reruns after changes. Never weaken checks or invent success. After two
+  failed repairs of one issue, report reproduction, error and attempts; stop that loop.
+- Brief milestone updates only; no narrated edits, file dumps, repeated summaries
+  or approval requests for routine scoped work. No extra audit/status/planning files.
+- Finish with one original-rubric reconciliation: fix scoped gaps, cue missing checks,
+  then ONE compact table IN CHAT ONLY: criterion ID/page | implementation evidence |
+  actual check/result | gap. Cover all criteria including delivery; flag unverified
+  or blocked items. Reuse the plan's IDs where valid; add missing criteria without
+  renumbering everything. After local fixes update affected rows only. Do not repeat
+  this audit unless changed scope or evidence invalidates it. Required docs remain required.
