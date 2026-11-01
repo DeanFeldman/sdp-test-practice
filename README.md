@@ -30,6 +30,11 @@ Your selected default is **editorial: charcoal, cream and orange**, with strong
 headings, generous whitespace and clear, aligned data. Prompt A already includes
 this direction; the actual brief's branding/accessibility requirements take precedence.
 
+[FRONTEND-GUIDE.md](FRONTEND-GUIDE.md) lists UI resources and copyable handoff/fix
+prompts. Bring it as a human reference if permitted. Build one connected UI flow
+early, complete UI alongside features, then polish; do not leave the whole UI to
+the end. Give Qoder only the selected short brief/examples, not this whole guide.
+
 ---
 
 **Google plans. Qoder checks once, then codes. You run commands and submit.**
