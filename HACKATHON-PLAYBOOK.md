@@ -149,6 +149,9 @@ stated 2.5 hours; tomorrow's actual brief remains authoritative.
 
 ## A0. Qoder-only planning fallback (08:00-08:30; no coding)
 
+**Model: Auto for this one planning turn.** Select it manually; switch to Efficient
+before C2 for well-specified work. No extra planning turn just to change models.
+
 Give Qoder the originals, short rules, actual starter facts, available domains
 and your stack preference. Use one concise planning request. This replaces Google
 A and separate C1: do not pay for another planning/preflight turn afterward.
@@ -265,6 +268,9 @@ for a focused difficult repair if Efficient was unable to implement a clear fix.
 
 ## E. Qoder: final audit only if missing
 
+**Model: Efficient.** Use Auto only for a concrete complex gap, not to repeat an
+already complete table or re-audit solely because you changed models.
+
 C2 already requests this. **Skip E if the complete final audit exists.** Reuse
 valid human results and update affected rows after localized fixes.
 
@@ -301,13 +307,25 @@ One prompt can trigger many model calls. Credits depend on model/token activity,
 not local command execution time alone. Measure balance before C1 and after
 working milestones. Do not infer savings from terse prose or fewer user messages.
 
-| Use | Starting choice |
+| Prompt / work | Starting choice |
 | --- | --- |
-| Quick local C1 check | Same model as implementation; Efficient if it shows 0.0x |
-| Well-specified implementation and repetitive edits | Efficient if it shows 0.0x |
-| Difficult core logic, or a clear fix Efficient cannot execute | Auto for that work |
-| Time-sensitive turnaround | Fast, successor to Performance |
-| Exceptional unresolved blocker | Consider Ultimate narrowly, after diagnosis |
+| A: original plan | Available permitted Google AI, if working; no Qoder tier |
+| A0: Qoder-only planning | Auto once; then Efficient for clear C2 work; skip C1 |
+| B: plan correction | Google; if unavailable, Auto for one focused Qoder correction |
+| C1: quick local blocker check | Efficient if available at the displayed rate |
+| C2: implementation | Efficient for clear work; Auto for difficult core logic |
+| D: blocker diagnosis | Google if working; otherwise Auto for focused Qoder diagnosis/complex repair |
+| E: final audit only if missing | Efficient; Auto for a specific complex gap only |
+| F: optional final review | Google if working; otherwise skip duplicate review |
+| Frontend guide's C2 add-on / UI fix prompt | Efficient in the existing chat |
+
+You select tiers manually; prompts cannot switch them. See the same table in the
+README while working. A model change is not a reason to restart the chat, re-plan
+or repeat checks. Stop after two unsuccessful repairs of the same failure; diagnose
+with evidence rather than buying another blind attempt. A thinking pause alone
+does not show failure. Fast may help turnaround when its actual rate/time tradeoff
+makes sense, but is not a default step. Ultimate and specific models are not needed
+by default; keep Experts/multi-agent mode off to avoid extra context and calls.
 
 Choose according to observed progress. Efficient's free offer has eligibility
 conditions and may be slow/rate-limited. Check your actual selector on the day;

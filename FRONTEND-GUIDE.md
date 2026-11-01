@@ -89,6 +89,9 @@ Do not add demo sections, fake data or integrations merely for appearance.
 
 **Qoder C1/C2:** keep the existing sequence and same chat. Do not add a separate
 paid design-planning turn. The execution plan should carry the short visual brief.
+Start with **Efficient** for these UI tasks (check the actual displayed rate).
+Use Auto only for a concrete difficult logic problem; changing models does not
+require a redesign, a new chat or another planning request.
 If it does not, append this to C2:
 
 ```text

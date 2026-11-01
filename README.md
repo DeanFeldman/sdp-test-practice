@@ -37,6 +37,31 @@
 8. **Final 45 minutes:** required checks, README/run instructions, fixes and delivery.
    Verify the actual submission, Gitea commit and marker access before **17:00**.
 
+## Model to use for each prompt
+
+Select the model yourself before sending; prompts cannot switch it. Check your
+actual displayed rate and balance. These are starting choices, not quality or
+credit guarantees. Use Efficient at 0.0x only if your account actually offers it.
+
+| Prompt / work | Where | Starting model |
+| --- | --- | --- |
+| A: original plan | Google, if available | Available permitted Google AI; no Qoder credits |
+| A0: Qoder-only planning fallback | Qoder | **Auto once**, then switch to Efficient for C2; skip C1 |
+| B: material plan correction | Google, if available | Google; if unavailable, **Auto** for one focused Qoder correction |
+| C1: quick local blocker check | Qoder | **Efficient** |
+| C2: continuous implementation | Qoder | **Efficient** for clear tasks; **Auto** for difficult core logic |
+| D: persistent blocker diagnosis | Google if available, otherwise Qoder | Google; **Auto** for a focused Qoder diagnosis/complex repair |
+| E: final evidence table, only if missing | Qoder | **Efficient**; Auto only for a specific complex unresolved gap |
+| F: optional final gap review | Google, if available | Google; skip if unavailable, since Qoder already checks coverage |
+| Frontend handoff / targeted UI fixes | Existing Qoder C2 chat | **Efficient** |
+
+Use the same chat when switching. Escalate for repeated wrong behavior, unmet
+requirements or a difficult logic problem; do not rerun the whole plan/audit.
+After two failed repairs of one issue, stop that loop and diagnose. A thinking
+pause alone is not evidence the model is failing. No automatic Ultimate, Fast,
+specific-model or multi-agent escalation; Fast is an optional turnaround choice
+only if the actual rate and remaining time make sense. Keep Experts/sub-agents off.
+
 ## What to bring and give each tool
 
 Bring these permitted Markdown materials through Moodle as instructed:
