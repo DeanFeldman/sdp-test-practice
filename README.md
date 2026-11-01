@@ -1,5 +1,17 @@
 ﻿# Hackathon: your steps
 
+Yes—your exam sequence is:
+
+1. **Google A** + complete brief/rubric PDFs + actual project details. No 2.5-hour rehearsal override.
+2. Save the output as **`EXECUTION-PLAN.md`** in your exam project.
+3. Give Qoder **the rules file, original PDFs and plan**, then paste **C1**.
+4. If **READY** or **READY WITH CORRECTIONS**, paste **C2 in the same chat**. If **RETURN TO GOOGLE**, resolve that blocker using B first.
+5. Run Qoder’s requested command batches, report results, monitor credits and submit through Gitea.
+
+Qoder finishes with the rubric evidence table **in chat**.
+
+---
+
 **Google plans. Qoder checks once, then codes. You run commands and submit.**
 
 Normal path: **Google A -> save plan -> Qoder C1 -> Qoder C2 -> human checks
