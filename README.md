@@ -1,6 +1,6 @@
 ﻿# Hackathon: your steps
 
-**Google plans once. Qoder implements continuously. You verify and submit.**
+**Google plans. Qoder writes code. You run commands, verify and submit.**
 
 1. **Read the brief/rubric.** Confirm the deadline, required stack and submission
    rules. Give both permitted tools the originals, including the complete rubric
@@ -17,13 +17,17 @@
    [short rules](QODER-HACKATHON-RULES.md). Send prompt C. Do not load this whole
    playbook into Qoder. Let it work through related steps without stopping for
    a new prompt after each task.
-5. **Monitor working milestones.** Try the app, inspect changes and save working
-   Git checkpoints. Run routine checks yourself where practical. Check credits;
-   preserve **600 for late blockers**. Start with Efficient if it still shows
+5. **Run routine commands yourself.** Qoder gives you a batch of exact commands
+   and working directories. You handle installs/setup, servers, builds, lint,
+   tests and Git. Return one short result message: command IDs, pass/fail and the
+   first useful error. It can continue independent work while you run commands;
+   it must leave the checked files unchanged. Save working Git checkpoints.
+   Check credits; preserve **600 for late blockers**. Start with Efficient if it still shows
    0.0x; use Auto if it struggles. Fast replaces the old Performance tier.
 6. **Handle persistent blockers.** Qoder can fix straightforward local errors.
    After repeated failures or a required design change, give Google D with the
-   exact error, current relevant code and attempts made. Apply the focused fix.
+   exact error, current relevant code and attempts made. Apply the focused fix
+   and rerun affected checks yourself. Do not skip required tests to save credits.
 7. **Check every criterion before submitting.** Qoder's final evidence table is
    **in chat only**. Use E only if it has not already provided that audit. Copy
    the response to Google with F; send only the resulting gaps back to Qoder.
