@@ -1,94 +1,73 @@
 ﻿# Hackathon: your steps
 
-Yes—your exam sequence is:
+## Latest rules for Monday, 2 November
 
-1. **Google A** + complete brief/rubric PDFs + actual project details. No 2.5-hour rehearsal override.
-2. Save the output as **`EXECUTION-PLAN.md`** in your exam project.
-3. Give Qoder **the rules file, original PDFs and plan**, then paste **C1**.
-4. If **READY** or **READY WITH CORRECTIONS**, paste **C2 in the same chat**. If **RETURN TO GOOGLE**, resolve that blocker using B first.
-5. Run Qoder’s requested command batches, report results, monitor credits and submit through Gitea.
+- Arrive by **07:45**. Session: **08:00-17:00**.
+- **08:00-08:30: planning only; no coding.** Then 7.5 hours programming and a
+  one-hour lunch at the instructed time. Lunch is not extra coding time.
+- **Qoder is the only assured AI.** Gemini/Google Search AI may work; Antigravity
+  is not allowed. Do not make the workflow depend on Google being reachable.
+- Check the exam's domain allowlist and actual tools. Be ready to adapt the stack.
+  Phones/earphones are permitted; breaks must stay within the stated courtyard bounds.
 
-Qoder finishes with the rubric evidence table **in chat**.
+## Your exam sequence
 
-Lecturer update (1 November): plan conservatively for **eight hours**, pending
-the next announcement and actual brief. Set up Git and push early, then roughly
-hourly commit/push and personally use the app from start to finish. You handle
-these checks; Qoder cues them alongside milestones without extra reports.
+1. **Planning period:** take two quiet minutes, read the complete brief/rubric and
+   allowlist, then choose the route below. No code, scaffolding or implementation.
+2. **If Google works:** use **A** with the original PDFs, actual project facts,
+   preferred stack, domain list and Gitea details. Save its complete Markdown output
+   as **`EXECUTION-PLAN.md`**. No 2.5-hour rehearsal override.
+3. **If Google fails:** use **A0 in Qoder**, with the rules and same originals/facts.
+   It returns one compact plan including the local blocker check. Save the plan
+   yourself; **skip separate C1**. Do not spend the planning period fixing Google.
+4. **From 08:30, when coding is permitted:** on the Google route give Qoder the
+   rules, originals and plan, then **C1**. READY/READY WITH CORRECTIONS -> **C2 in
+   the same chat**. On the A0 route, paste **C2 in that same Qoder chat**, without
+   repeating the plan/rubric extraction. For a major blocker use B only if Google
+   is available; otherwise ask Qoder for one focused recommendation/diagnostic.
+5. **Set up Git and make the initial push early in the coding period.** You run
+   installs, servers, checks and Git commands when Qoder cues them; report compact
+   results. Roughly hourly, use the app end to end, commit and push.
+6. **Monitor credits:** protect 600 for late required fixes. After two failed repairs
+   of one problem, stop that loop and use a focused diagnostic with Qoder or Google
+   if available. Model rates/eligibility must be checked in the actual selector.
+7. **Final coverage:** around 5.5 active hours (excluding lunch), Qoder reconciles
+   the originals and returns one rubric evidence table **in chat only**. E is only
+   a fallback if this is missing; update changed rows after fixes. Google F is optional.
+8. **Final 45 minutes:** required checks, README/run instructions, fixes and delivery.
+   Verify the actual submission, Gitea commit and marker access before **17:00**.
 
-Tonight: choose a provisional familiar stack and a simple visual direction
-(colours, typography/layout/style), then supply both to Google A. Prepare permitted
-Markdown files via Moodle upload as instructed, note plugins/environment settings,
-check the promised exam announcement, get a full night's sleep and arrive early.
-At the start, take two quiet minutes before working.
+## What to bring and give each tool
 
-Use [EXAM-PREP.md](EXAM-PREP.md) tonight for the small plugin/environment shortlist,
-visual style options and browser checklist. It is for you; do not add the whole
-prep sheet to Qoder's context. Supply only your chosen stack and short visual brief
-to Google A. Frontend polish complements the actual rubric's functional requirements.
+Bring these permitted Markdown materials through Moodle as instructed:
 
-Your selected default is **editorial: charcoal, cream and orange**, with strong
-headings, generous whitespace and clear, aligned data. Prompt A already includes
-this direction; the actual brief's branding/accessibility requirements take precedence.
+- [HACKATHON-PLAYBOOK.md](HACKATHON-PLAYBOOK.md): A/A0, C1/C2 and fallback prompts.
+- [QODER-HACKATHON-RULES.md](QODER-HACKATHON-RULES.md): shared Qoder instructions.
+- This README: your steps.
+- [EXAM-PREP.md](EXAM-PREP.md): optional human editor/plugin checklist.
+- [FRONTEND-GUIDE.md](FRONTEND-GUIDE.md): optional human resource/handoff guide.
 
-[FRONTEND-GUIDE.md](FRONTEND-GUIDE.md) lists UI resources and copyable handoff/fix
-prompts. Bring it as a human reference if permitted. Build one connected UI flow
-early, complete UI alongside features, then polish; do not leave the whole UI to
-the end. Give Qoder only the selected short brief/examples, not this whole guide.
+Give Qoder only the rules, execution plan if already created, original brief/rubric
+and relevant project facts/examples. Do not ask it to read the whole playbook,
+human prep sheets, old plans or Google history. Keep the same chat and reuse context.
+The exam plan is created tomorrow, not copied from the Test 1 rehearsal.
 
----
+## Tonight and frontend direction
 
-**Google plans. Qoder checks once, then codes. You run commands and submit.**
+Choose a familiar provisional language/framework/database; the actual brief and
+available packages may require changes. Note editor extensions/settings you already
+use rather than depending on new installations. Check compatibility tonight.
 
-Normal path: **Google A -> save plan -> Qoder C1 -> Qoder C2 -> human checks
-and submission.** Google B/D are fallbacks for blockers; F is an optional final
-cross-check, not a required second planning round. The rehearsal did not establish
-that Google's plan is error-free; Qoder corrects concrete mistakes while coding.
+Your chosen visual style is **editorial: charcoal, cream and burnt orange**, with
+strong headings, whitespace, subtle dividers and aligned data. A/A0 carry that
+preference. Build a connected UI flow early, complete UI alongside features, then
+polish once. Follow any required branding/accessibility rules.
 
-Give Qoder only `QODER-HACKATHON-RULES.md`, `EXECUTION-PLAN.md`, the original
-brief/rubric and actual project context. Copy C1/C2 from the playbook; do not ask
-Qoder to read the whole playbook, old rehearsal plans or Google chat history.
-Keep one chat. The rules contain shared instructions; C2 reuses them rather than
-reloading everything. This reduces avoidable context, not guaranteed credit usage.
+Design sites are inspiration to browse tonight, not confirmed exam domains.
+Save permitted references through Moodle. Prefer **system fonts and local assets**;
+no required runtime CDNs. Keep the style with plain CSS if a component kit is
+unavailable. No extra AI generators, agent plugins or AI integrations.
 
-1. **Read the brief/rubric.** Give both permitted tools the complete originals,
-   including every rubric PDF page/table. Supply actual starter facts, your
-   Gitea exam repository URL and target branch. Keep the prep repo separate.
-2. **Google A:** get one full-mark coverage checklist and one proposed architecture
-   with an ordered execution plan. Google chooses a suitable stack when none is
-   mandated. A now requires Google to check and correct its own technical draft
-   before output. Use B only to repair specific gaps. Copy its complete Markdown block
-   into `EXECUTION-PLAN.md` in the exam project root (UTF-8 plain text, no outer
-   code fences, not `.md.txt`). Google provides the contents; you save the file.
-3. **Qoder C1, once:** a quick local blocker check, aiming for 1-2 minutes, using
-   the implementation model (Efficient if it shows 0.0x). Google handles detailed
-   planning self-checks; C1 checks relevant starter facts, with no full second audit.
-   **READY** or **READY WITH
-   CORRECTIONS** means continue to C2; Qoder applies local fixes. **RETURN TO
-   GOOGLE** means paste its findings into B, update the affected plan sections,
-   then give Google's corrections to Qoder. You do not need to diagnose technical
-   faults or choose their solutions; Qoder checks the affected repairs.
-4. **Qoder C2:** in the same chat, implement the complete plan with the agreed C1
-   corrections. Try Efficient when it shows 0.0x for well-specified work. Use Auto
-   for difficult core logic or when Efficient struggles. Keep related work together.
-5. **You run routine commands.** Qoder cues batched command IDs, exact working
-   directories and success conditions. You handle installs, servers, builds,
-   tests, browser checks and Git. Reply once with IDs, pass/fail and useful errors.
-   Qoder can work independently while checks run, keeping checked inputs stable.
-6. **Watch results and credits.** Save working checkpoints. After two failed
-   repairs of the same issue, stop the loop; use Google D with real evidence.
-   Check actual balance after milestones and protect **600 credits for late gaps**.
-7. **Final coverage:** around hour 5.5, Qoder checks every original criterion and
-   returns one compact evidence table **in chat only**. Use E only if that audit
-   is missing. Optionally give Google F the evidence; send only actionable gaps to Qoder.
-   Update affected rows after fixes instead of regenerating reports.
-8. **Submit:** reserve the final 45 minutes for delivery and blockers. Complete
-   required checks, follow the app's run instructions in a fresh copy and verify
-   the actual submission. Verify the pushed commit and required access on Gitea.
-
-Do not make Qoder write extra audit/status/planning files. Keep any working notes
-or saved chat reports yourself. Required assessment documentation/tests still
-need to be produced. A separate status document is optional.
-
-Use prepared materials within the exam's rules. Target every full-mark criterion
-with evidence; the instructions cannot guarantee time, credit usage or a score.
-`this_is_a_test.md` is an older guide; use the new brief's deadline and requirements.
+Get sleep and arrive early. Follow authoritative exam updates. Target every rubric
+criterion with real evidence; no prompt guarantees a score, time or credit usage.
+`this_is_a_test.md` is an old guide and is not tomorrow's instructions.

@@ -1,10 +1,12 @@
 ﻿# Eight-hour hackathon: Google plans, Qoder checks once and implements
 
-For Monday, 2 November 2026: one person, 3,000 Qoder credits. You confirmed Qoder
-and Google Search AI are allowed. Prepared materials must follow the exam's rules.
-The lecturer's 1 November announcement mentions eight hours to work on code.
-Use eight hours as a conservative planning window pending the next announcement
-and actual brief; use their exact start/deadline when published.
+For Monday, 2 November 2026: one person, 3,000 Qoder credits. Prepared materials
+must follow the exam's rules; Google access is optional, not assured.
+Latest lecturer rules: arrive by 07:45 on Monday 2 November. Session 08:00-17:00:
+30 minutes planning (08:00-08:30, no coding), 7.5 hours programming and one hour
+lunch. Lunch placement follows the invigilator's instructions; it is not coding
+time. Qoder is the only assured AI. Gemini/Google Search AI may fail behind the
+firewall; Antigravity is not allowed. Check the supplied domain list and adapt.
 
 The rehearsal exposed errors in Google's proposed technical details. Use Google
 for complete rubric coverage, priorities and a proposed architecture. Give Qoder
@@ -37,10 +39,14 @@ evidence and one minimal recommendation. Do not insist on implementing a known f
 
 ## A. Google: plan once
 
+Use A only if Google Search AI or Gemini actually works and is permitted. If it
+fails, switch promptly to A0 below; do not burn planning time troubleshooting it.
+
 ```text
-I am alone with 3,000 Qoder credits. Plan within eight hours unless the supplied
-exam instructions specify otherwise. Include all setup/checks/submission in this
-conservative window; do not assume extra time beyond the actual deadline. You are the overall
+I am alone with 3,000 Qoder credits. The session is 08:00-17:00: 30 minutes
+planning with NO CODING, 7.5 hours programming and one hour lunch at the instructed
+time. Plan within those limits; lunch is not coding time. This turn is planning
+only: no application code, executable scaffolding or implementation. You are the overall
 planner responsible for a complete, technically consistent implementation plan.
 Qoder implements it. I run routine commands and submit through my supplied Gitea
 repository/branch.
@@ -121,6 +127,7 @@ facts that materially block a correct plan; otherwise produce the plan now.
 
 ORIGINAL BRIEF/RUBRIC: <attach/reference full originals>
 PROJECT FACTS: <mandated stack, starter/no starter/unknown, tree, scripts, code>
+AVAILABLE DOMAINS / ENVIRONMENT: <supplied allowlist and actual installed tools>
 GITEA EXAM URL / BRANCH: <actual values or unknown>
 PROVISIONAL STACK: <familiar language/framework/database, or unknown>
 VISUAL DIRECTION: Editorial: charcoal text, cream backgrounds, burnt-orange accents.
@@ -128,6 +135,8 @@ Strong headings, generous whitespace, subtle dividers and aligned data. Use clea
 navigation, labelled controls and visible keyboard focus. Include loading/empty/
 error/success states and adapt to narrower windows. Follow required branding and
 accessibility rules; keep this coherent style without optional redesigns.
+Do not require external fonts, images, CDNs or design sites to load at runtime.
+Use available local assets/system fonts and only compatible, reachable packages.
 ```
 
 Check coverage yourself. Copy the entire Markdown block (including the rubric
@@ -135,8 +144,33 @@ checklist) into a new text file in the **exam project's root folder**, named
 exactly `EXECUTION-PLAN.md`. Save as UTF-8 plain text, without the surrounding
 code fences; check it is not named `EXECUTION-PLAN.md.txt`. Google supplies the
 contents; you save it. No Qoder request or Google Docs/PDF conversion is needed.
-For the old Test 1 rehearsal, explicitly override eight hours with its stated
-2.5 hours; tomorrow's actual brief remains authoritative.
+For the old Test 1 rehearsal, explicitly override the exam timetable with its
+stated 2.5 hours; tomorrow's actual brief remains authoritative.
+
+## A0. Qoder-only planning fallback (08:00-08:30; no coding)
+
+Give Qoder the originals, short rules, actual starter facts, available domains
+and your stack preference. Use one concise planning request. This replaces Google
+A and separate C1: do not pay for another planning/preflight turn afterward.
+Use the same chat for C2 from 08:30, reusing this context. Save the plan yourself
+as `EXECUTION-PLAN.md`; do not ask Qoder to write a second process document.
+
+```text
+Apply QODER-HACKATHON-RULES.md. A0: planning only; NO CODING or file changes.
+Session 08:00-17:00: planning until 08:30, 7.5 hours programming, one hour lunch
+at the instructed time. Read the complete original brief/rubric once, including
+tables; flag unreadable source. Inspect only essential supplied starter facts.
+Return one compact Markdown plan for EXECUTION-PLAN.md: all criterion IDs/pages,
+exact full-mark requirements/weights; one feasible architecture using my familiar
+stack where suitable; critical formulas/boundaries/contracts; ordered milestones
+and observable checks; final 45-minute delivery buffer. No application code,
+speculative commands, alternative surveys or separate audit. Preserve every
+required criterion, Gitea delivery and editorial charcoal/cream/orange styling.
+Use the supplied domain allowlist/actual environment; avoid CDN/runtime asset
+dependencies. This includes the quick local blocker check; do not repeat C1.
+Ask only for essential missing facts. Wait for my C2 after coding is permitted.
+INPUTS: <originals, starter facts, preferred stack, allowlist, Gitea URL/branch>
+```
 
 ## B. Google: focused plan correction only if needed
 
@@ -176,6 +210,8 @@ its concrete local corrections without asking you to choose technical details.
 For RETURN TO GOOGLE, paste its findings into Google B, update the affected plan
 sections and give the response to Qoder. It checks those affected issues only
 before dependent implementation; no repeated full preflight or extra paperwork.
+If Google stops working, keep the Qoder chat and request one focused correction
+or missing diagnostic from its findings. Do not restart with A0 or another full plan.
 
 ## C2. Qoder: implement continuously
 
@@ -184,7 +220,8 @@ well-specified work; use Auto for difficult core logic or repeated failures.
 You select the model. The prompt cannot switch tiers or enforce a credit cap.
 
 ```text
-C2: continue under the rules already loaded. Implement EXECUTION-PLAN.md with
+C2: coding is now permitted. Continue under the rules already loaded.
+Implement EXECUTION-PLAN.md with
 the C1 corrections, using the original brief/rubric as authority. Read originals
 once if not already read. Reuse context; work continuously through milestones.
 Cue my command batches when needed. Finish with the rules' single chat evidence
@@ -207,6 +244,9 @@ You can explicitly delegate a command when that is more practical.
 
 After two unsuccessful Qoder repairs of the same failure, stop the loop. Supply
 current code and actual errors; Google does not have a live repository view.
+If Google is unavailable, use the same focused diagnostic request with Qoder in
+the existing chat; do not call external AI. Request one missing diagnostic or
+one evidence-based fix; pause dependent work if an essential blocker remains.
 
 ```text
 Diagnose from evidence. If clear, return one narrow Qoder fix prompt with the
@@ -277,8 +317,8 @@ across many chats or switching models after every small edit.
 
 | Spending envelope, not an automatic cap | Credits |
 | --- | ---: |
-| Quick local C1 allowance; unused credits stay with implementation | 50 |
-| Required implementation | 1,950 |
+| Planning/preflight allowance; use for A0 if Google unavailable | 200 |
+| Required implementation | 1,800 |
 | Focused corrections | 400 |
 | Protected reserve for late gaps/blockers | 600 |
 | Total | 3,000 |
@@ -290,20 +330,22 @@ stop at a safe milestone and reassess if the burn rate is too high. At 1,200
 remaining, review gaps and stop optional polish. Protect the last 600 for required
 gaps and delivery. Never drop explicit rubric items merely to save tokens.
 
-## Eight-hour targets
+## Exam timetable and active-work targets
 
 | Elapsed time | Target |
 | --- | --- |
-| 00:00-00:30 | Two quiet minutes; read originals; set up/verify Gitea remote and initial push; Google plan |
-| 00:30-00:45 | Quick C1, essential corrections and start baseline implementation |
+| Before 08:00 | Arrive by 07:45 and follow setup instructions |
+| 00:00-00:30 (08:00-08:30) | Two quiet minutes; read originals/allowlist; Google A or Qoder A0; no coding |
+| 00:30-00:45 (from 08:30) | C1 only for Google route; C2; human Git setup/initial push; start baseline |
 | 00:45-05:30 | Continuous implementation; roughly hourly human workflow checks, commits and pushes |
-| 05:30-06:30 | One final rubric reconciliation and scoped fixes; optional Google gap review |
+| 05:30-06:30 | One final rubric reconciliation and scoped fixes; Google review only if available/useful |
 | 06:30-07:15 | Required final checks, user flows, README and fresh-copy rehearsal |
 | 07:15-08:00 | Submit, verify Gitea commit/access and actual submission; buffer |
 
-Use the actual start, deadline, stack and submission rules from tomorrow's brief.
-The older practice sheet's 17:00 cutoff is not assumed. Git push alone may not
-complete the required submission action.
+Elapsed targets count eight active hours: 30 minutes planning plus 7.5 programming.
+Pause this active-work clock for the instructed one-hour lunch. Do not invent a
+lunch slot or code during planning. Deadline is 17:00 per the latest announcement;
+follow any authoritative clarification. Git push alone may not complete submission.
 
 Credit accounting and Efficient offer rechecked 1 November 2026:
 [credit accounting](https://docs.qoder.com/Credits),

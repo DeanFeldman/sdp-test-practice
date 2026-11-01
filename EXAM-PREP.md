@@ -8,6 +8,14 @@ visual design and usability without making the exam frontend-only.
 
 ## What to write down
 
+Latest rules: arrive by **07:45**. Session **08:00-17:00**, with **08:00-08:30
+planning only (no coding)**, **7.5 programming hours** and **one hour lunch** at the
+instructed time. Qoder is assured; Gemini/Google Search AI are only possible.
+Prepare for the Qoder-only A0 route. Python, JavaScript, Java and well-known
+frameworks, Docker and popular databases are described as available; verify the
+actual stack/domains in the brief. Phones/earphones are permitted. Short breaks
+must stay within the MSL courtyard boundaries stated by the lecturer.
+
 Record names/settings you already use so you can recreate them quickly on the exam
 machine. A written list is enough; installing everything listed is not a goal.
 

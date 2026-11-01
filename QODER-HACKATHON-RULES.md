@@ -1,8 +1,16 @@
 ﻿# Qoder: credit-conscious implementation
 
-The original brief/rubric is authoritative. Google supplies the overall plan and
+The original brief/rubric is authoritative. Google, if available, supplies the plan and
 proposed architecture in EXECUTION-PLAN.md in the project root, including its
 rubric checklist. Target every full-mark criterion; never guarantee a score.
+
+- Latest timetable: 08:00-08:30 planning only, NO CODING; then 7.5 programming
+  hours and one-hour lunch within the 08:00-17:00 session. Follow the instructed
+  lunch slot. During planning do not edit files, scaffold or implement. Wait for C2.
+- If Google is unavailable, A0 makes one compact plan and local blocker check
+  from originals/starter facts. No separate C1 or repeated planning afterward.
+  Qoder is the only assured AI; do not assume external AI access. Use allowed
+  domains/installed tools. No repeated blocked downloads or optional CDN assets.
 
 - C1 only: read the plan once; inspect relevant starter/manifest/entry/config files
   for obvious launch blockers and LOCAL FACT TO CHECK items. No full rubric audit,

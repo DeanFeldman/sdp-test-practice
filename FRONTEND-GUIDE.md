@@ -29,6 +29,13 @@ main workflow. A styled shell is not evidence that the required application work
 
 ## Small resource shortlist
 
+Firewall update: these sites are candidates to browse tonight, not confirmed exam
+allowlist entries. Save permitted references through Moodle. Tomorrow use supplied
+domains and installed/reachable packages. Default to system fonts and local assets;
+the app must not depend on a font/icon/CSS CDN or external preview loading. If a
+component kit is unavailable, keep the chosen visual style using plain CSS and
+existing components instead of spending time on network workarounds.
+
 | Resource | Use it for | Integration decision |
 | --- | --- | --- |
 | [shadcn/ui blocks](https://ui.shadcn.com/blocks) | React UI components and reference layouts | Consider when using a compatible React stack and setup is familiar; bring only needed components, not a whole dashboard with demo dependencies/data |
