@@ -27,7 +27,7 @@ machine. A written list is enough; installing everything listed is not a goal.
 | Editing | Word wrap preference, indentation and one formatter per language |
 | Formatting | Format on save only if tested with the chosen formatter/project |
 | Terminal | Actual shell (PowerShell/bash/etc.); do not assume another machine matches |
-| Runtime | Provisional language/framework/database; verify actual available versions tomorrow |
+| Runtime | Default React/TypeScript/Vite + plain CSS; FastAPI backend and SQLite/sqlite3 when needed; verify actual versions/access tomorrow |
 | Git | Required Gitea URL/branch when supplied, user identity, permitted authentication method |
 | Qoder | Actual credit balance/model rates; no extra AI assistants or agent bundles |
 

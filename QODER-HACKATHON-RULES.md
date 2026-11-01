@@ -4,6 +4,25 @@ The original brief/rubric is authoritative. Google, if available, supplies the p
 proposed architecture in EXECUTION-PLAN.md in the project root, including its
 rubric checklist. Target every full-mark criterion; never guarantee a score.
 
+The submitted application's README must include the required AI attribution /
+declaration, following the actual Moodle document/template or instructions I supply
+here. Preserve required wording/fields and report only genuine tools/usage. If the
+source is missing/unreadable or requirements conflict, flag it and request the
+specific source; do not invent a compliant declaration. Include this in final
+deliverable checks, without treating a pending declaration as complete.
+The supplied ai_policy.pdf also requires Assisted-by: tool[model] attribution for
+AI-generated code commits (cue it with human Git commands), usage/non-usage for
+generation/inline editing/review in README, and declarations in each written
+deliverable. Record actual tool/model/purpose and model switches; never guess an
+underlying model from a tier. Flag unavailable metadata for lecturer clarification.
+Retain assessment transcripts/saved files if requested; no fabricated declarations.
+
+Default if the plan/brief/starter does not specify otherwise: React + TypeScript +
+Vite, plain CSS/system fonts; Python + FastAPI when needed; SQLite via sqlite3 for
+required persistence. Preserve a suitable starter and check actual availability.
+No unnecessary ORM, Docker, component kit or extra services. If React tooling is
+blocked, use plain HTML/CSS/JavaScript where suitable; no repeated blocked installs.
+
 - Latest timetable: 08:00-08:30 planning only, NO CODING; then 7.5 programming
   hours and one-hour lunch within the 08:00-17:00 session. Follow the instructed
   lunch slot. During planning do not edit files, scaffold or implement. Wait for C2.

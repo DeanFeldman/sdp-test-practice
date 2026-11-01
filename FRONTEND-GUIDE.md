@@ -29,6 +29,11 @@ main workflow. A styled shell is not evidence that the required application work
 
 ## Small resource shortlist
 
+Prepared default: React + TypeScript + Vite with plain CSS/system fonts. This does
+not require shadcn or daisyUI; adopt a kit only when it reduces actual work and
+is available. Use existing starter components first. Plain HTML/CSS/JavaScript is
+the fallback when React tooling is unavailable and the brief permits it.
+
 Firewall update: these sites are candidates to browse tonight, not confirmed exam
 allowlist entries. Save permitted references through Moodle. Tomorrow use supplied
 domains and installed/reachable packages. Default to system fonts and local assets;

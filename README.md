@@ -64,6 +64,17 @@ only if the actual rate and remaining time make sense. Keep Experts/sub-agents o
 
 ## What to bring and give each tool
 
+The **submitted application's README** must include the required **AI attribution /
+declaration** from the Moodle document/template or instructions supplied in chat.
+Bring that source with the brief and give it to the planner and Qoder. Preserve
+its required wording/fields and actual tool usage; missing requirements must be
+flagged, not invented. Qoder's final checks must cover this required deliverable.
+The supplied [AI policy](ai_policy.pdf) also requires attribution in AI-generated
+code commits and declarations in written documents. See
+[AI-ATTRIBUTION-GUIDE.md](AI-ATTRIBUTION-GUIDE.md) for exact templates, fresh-session
+and transcript guidance. Record actual models; Auto/Efficient tier names may not
+identify the underlying model, so disclose unavailable details and seek clarification.
+
 Bring these permitted Markdown materials through Moodle as instructed:
 
 - [EXAM-WORKFLOW.md](EXAM-WORKFLOW.md): the readable step-by-step workflow from chat.
@@ -72,6 +83,7 @@ Bring these permitted Markdown materials through Moodle as instructed:
 - This README: your steps.
 - [EXAM-PREP.md](EXAM-PREP.md): optional human editor/plugin checklist.
 - [FRONTEND-GUIDE.md](FRONTEND-GUIDE.md): optional human resource/handoff guide.
+- [AI-ATTRIBUTION-GUIDE.md](AI-ATTRIBUTION-GUIDE.md) and [ai_policy.pdf](ai_policy.pdf): attribution requirements and templates.
 
 Give Qoder only the rules, execution plan if already created, original brief/rubric
 and relevant project facts/examples. Do not ask it to read the whole playbook,
@@ -80,9 +92,30 @@ The exam plan is created tomorrow, not copied from the Test 1 rehearsal.
 
 ## Tonight and frontend direction
 
-Choose a familiar provisional language/framework/database; the actual brief and
-available packages may require changes. Note editor extensions/settings you already
-use rather than depending on new installations. Check compatibility tonight.
+**Preferred stack, unless the brief/starter or actual environment requires otherwise:**
+
+| Part | Default |
+| --- | --- |
+| Frontend | React + TypeScript + Vite |
+| Styling | Plain CSS with shared colour/spacing/type tokens; system fonts |
+| Backend, when needed | Python + FastAPI |
+| Database, when persistence is needed | SQLite, using Python's sqlite3 initially |
+| UI extras | Only needed, reachable packages; no mandatory component kit/CDN |
+
+This follows the main technologies used in your Test 1 solution, without requiring
+its exact architecture or every dependency. A/B/A0 should use this default rather
+than ask you to choose frameworks. Preserve a suitable provided starter. Do not
+add a backend/database if the actual task does not need one, or add Docker, Redis,
+authentication, an ORM or deployment services merely because they are available.
+
+Check actual Node/Python compatibility and allowed package access before setup;
+do not assume latest versions work on the exam machine. If React tooling is
+unavailable, use plain HTML/CSS/JavaScript with FastAPI where suitable. If a required
+part of the stack is blocked, the planner chooses one minimal permitted alternative
+and explains why, rather than repeatedly attempting blocked installations.
+
+Note editor extensions/settings you already use rather than depending on new
+installations. Check compatibility tonight.
 
 Your chosen visual style is **editorial: charcoal, cream and burnt orange**, with
 strong headings, whitespace, subtle dividers and aligned data. A/A0 carry that

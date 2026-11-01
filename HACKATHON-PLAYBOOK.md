@@ -37,6 +37,12 @@ technical correctness against reality and corrects concrete errors while preserv
 scope and valid decisions. Major architectural changes go back to you/Google with
 evidence and one minimal recommendation. Do not insist on implementing a known flaw.
 
+Prepared default: React + TypeScript + Vite, plain CSS/system fonts; Python +
+FastAPI when a backend is needed; SQLite via sqlite3 when persistence is needed.
+Preserve a suitable starter. No mandatory component kit, ORM, Docker or extra
+services. If React tooling is blocked, prefer plain HTML/CSS/JavaScript where
+suitable; required stack changes must follow the actual brief and available tools.
+
 ## A. Google: plan once
 
 Use A only if Google Search AI or Gemini actually works and is permitted. If it
@@ -126,10 +132,20 @@ Keep external sample/input URLs required by the brief. Ask only for missing
 facts that materially block a correct plan; otherwise produce the plan now.
 
 ORIGINAL BRIEF/RUBRIC: <attach/reference full originals>
+AI ATTRIBUTION REQUIREMENTS: supplied ai_policy.pdf (attach it), plus any later
+Moodle/exam clarifications. Include its required attribution/declaration in the submitted
+application's README, using required wording/fields and only genuine AI usage.
+Include code-commit Assisted-by trailers and written-document declarations in
+deliverable checks. Flag unresolved source/usage details; do not fabricate compliance.
 PROJECT FACTS: <mandated stack, starter/no starter/unknown, tree, scripts, code>
 AVAILABLE DOMAINS / ENVIRONMENT: <supplied allowlist and actual installed tools>
 GITEA EXAM URL / BRANCH: <actual values or unknown>
-PROVISIONAL STACK: <familiar language/framework/database, or unknown>
+PREFERRED STACK: React + TypeScript + Vite; plain CSS and system fonts. Python +
+FastAPI backend if needed; SQLite via Python sqlite3 if persistence is needed.
+Preserve a suitable supplied starter. Avoid unnecessary ORM/services/component
+kits. Check actual runtime/package availability. If React tooling is unavailable,
+prefer plain HTML/CSS/JavaScript where suitable; otherwise choose one minimal
+permitted alternative. No repeated blocked installs or mandatory external CDNs.
 VISUAL DIRECTION: Editorial: charcoal text, cream backgrounds, burnt-orange accents.
 Strong headings, generous whitespace, subtle dividers and aligned data. Use clear
 navigation, labelled controls and visible keyboard focus. Include loading/empty/
@@ -165,7 +181,8 @@ at the instructed time. Read the complete original brief/rubric once, including
 tables; flag unreadable source. Inspect only essential supplied starter facts.
 Return one compact Markdown plan for EXECUTION-PLAN.md: all criterion IDs/pages,
 exact full-mark requirements/weights; one feasible architecture using my familiar
-stack where suitable; critical formulas/boundaries/contracts; ordered milestones
+stack where suitable (React/TypeScript/Vite + plain CSS; FastAPI and SQLite only
+when needed); critical formulas/boundaries/contracts; ordered milestones
 and observable checks; final 45-minute delivery buffer. No application code,
 speculative commands, alternative surveys or separate audit. Preserve every
 required criterion, Gitea delivery and editorial charcoal/cream/orange styling.
@@ -173,6 +190,9 @@ Use the supplied domain allowlist/actual environment; avoid CDN/runtime asset
 dependencies. This includes the quick local blocker check; do not repeat C1.
 Ask only for essential missing facts. Wait for my C2 after coding is permitted.
 INPUTS: <originals, starter facts, preferred stack, allowlist, Gitea URL/branch>
+AI ATTRIBUTION: follow the supplied Moodle document/template or instructions in
+chat for the submitted application's README. Include it as a deliverable/check;
+request missing source/details instead of inventing wording or usage.
 ```
 
 ## B. Google: focused plan correction only if needed
