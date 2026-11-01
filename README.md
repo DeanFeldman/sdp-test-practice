@@ -66,6 +66,7 @@ only if the actual rate and remaining time make sense. Keep Experts/sub-agents o
 
 Bring these permitted Markdown materials through Moodle as instructed:
 
+- [EXAM-WORKFLOW.md](EXAM-WORKFLOW.md): the readable step-by-step workflow from chat.
 - [HACKATHON-PLAYBOOK.md](HACKATHON-PLAYBOOK.md): A/A0, C1/C2 and fallback prompts.
 - [QODER-HACKATHON-RULES.md](QODER-HACKATHON-RULES.md): shared Qoder instructions.
 - This README: your steps.
