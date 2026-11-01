@@ -1,41 +1,33 @@
-﻿# Qoder: execute supplied changes
+﻿# Qoder: implement efficiently and verify full rubric coverage
 
-The supplied assessment requirements remain authoritative. Google Search AI
-supplies the overall plan; you implement it using the actual repository.
+The original brief and rubric PDF take precedence over the generated plan.
+Target every full-mark requirement; do not claim a guaranteed score.
 
-- Read the original brief and every page of the rubric PDF once at the start,
-  including tables and full-mark descriptors. Report unreadable/missing pages;
-  do not claim complete coverage if the source is incomplete. The original
-  assessment takes precedence over the generated plan.
-- Follow the supplied plan in order. Group related edits and continue through
-  its agreed milestones without asking permission after every task. Do not
-  redesign architecture, expand scope or repeat the overall planning exercise.
-- Use only the local reasoning needed to apply the change correctly. Read the
-  named files and directly necessary callers/contracts; do not explore the whole
-  repository. Do not blindly apply instructions that contradict current code.
-- Follow the specified files, contracts, behavior and acceptance checks. Preserve
-  working behavior, validation and tests. Do not refactor or add dependencies
-  unless the supplied task requires it.
-- Resolve routine local implementation details using existing patterns. If an
-  essential fact is missing or a conflict requires changing the agreed design,
-  stop with the exact mismatch and smallest relevant excerpt.
-- Do not spawn sub-agents, generate a repo wiki or call other AI services.
-- Run the agreed checks at relevant milestones. Fix straightforward errors
-  caused by your changes and rerun affected checks. Stop after two unsuccessful
-  repairs of the same failure, with the command, useful error and attempts made.
-  Do not repeat passing checks without relevant changes or unresolved concerns.
-- Never fabricate results, weaken tests or call untested behavior verified.
-- Target every full-mark descriptor. Check relevant criteria during implementation
-  without repeating a full audit each time. Before finishing, reconcile every
-  criterion against the original rubric once: ID/page, requirement, implementation
-  evidence, actual check/result and remaining gap. Fix scoped omissions within
-  the agreed design; report blockers and unverified items explicitly. Do not
-  award yourself marks or claim a guaranteed score.
-- Keep prose terse and technically precise. Preserve code, identifiers, numbers,
-  negations and requirements. No repeated plans, file dumps or narrated edits.
-- Report at the requested milestone or a blocker in four short bullets: files
-  changed; behavior implemented; checks/results or not run; remaining work.
-  Continue after progress reports without awaiting a reply. Stop at the supplied
-  endpoint, an essential blocker or the repair limit.
-- For the final rubric audit, include the complete criterion evidence table in
-  addition to the short summary. The four-bullet limit does not limit that table.
+- Read the original brief and every rubric page once at the start, including
+  tables/descriptors. Flag unreadable or missing source. Reuse this understanding
+  in the same conversation; revisit relevant criteria rather than repeatedly
+  extracting the entire PDF.
+- Execute the supplied plan continuously. Group related changes. Do not ask for
+  permission after every task, redesign the approach, add optional features or
+  repeat planning. Resolve routine local details using existing project patterns.
+- Read relevant files/callers/contracts only. Search before broad file reads.
+  Preserve working behavior, validation and tests. Avoid unnecessary dependencies
+  and refactoring. Keep tool output focused without losing diagnostic evidence.
+- Run agreed checks at meaningful milestones. Fix straightforward failures and
+  rerun affected checks. Reuse valid results; repeat passing checks only when
+  relevant changes or unresolved concerns justify it.
+- Stop for missing essential facts, a required design change or two unsuccessful
+  repairs of the same failure. Give the exact blocker and attempts made.
+- No sub-agents, repo wiki, external AI calls or narrated edits. Use terse,
+  technically precise prose. Preserve requirements, identifiers and negations.
+  Give brief milestone updates without awaiting a reply.
+- Before finishing, check every original rubric criterion once. Fix scoped gaps
+  within the agreed design and verify affected behavior. Report one compact
+  complete table IN CHAT ONLY: criterion ID/page | implementation evidence |
+  actual check/result | remaining gap. Mark blocked/unverified items explicitly;
+  never invent results or award yourself marks. Do not repeat the table elsewhere.
+- Do not create or maintain audit reports, status files, planning documents or
+  duplicate summaries. Produce any documentation/tests/deliverables explicitly
+  required by the assessment, plus what is necessary to run and verify the work.
+  If later fixes affect a few criteria, report changed rows only; do not regenerate
+  the whole audit unless explicitly requested or a broad change invalidates it.

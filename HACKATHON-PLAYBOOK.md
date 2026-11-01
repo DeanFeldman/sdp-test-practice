@@ -1,340 +1,231 @@
-﻿# Nine-hour hackathon: Google plans, Qoder executes
+﻿# Nine-hour hackathon: full rubric coverage with less wasted work
 
-Prepared for Monday, 2 November 2026: one person, 3,000 Qoder credits, and the
-brief supplied on the day. You confirmed Qoder and Google Search AI are allowed.
-Use prepared materials only if the assessment permits them.
+Monday, 2 November 2026: one person, 3,000 Qoder credits. You confirmed Qoder and
+Google Search AI are allowed. Prepared materials must follow the exam's rules.
 
-The aim is to move requirements analysis, architecture, task breakdown and
-rubric review to Google Search AI. Give Qoder the overall plan once and let it
-implement related steps continuously, using local reasoning where needed.
+Google handles overall planning. Qoder implements continuously using the actual
+repository. You verify behavior, watch time/credits and submit. Target every
+full-mark requirement with evidence; no prompt guarantees the lecturer's score.
 
-## The workflow
+## What to give each tool
 
-1. Read the original brief and rubric yourself. Supply both originals, including
-   the complete rubric PDF, to both tools.
-2. Give Google Search AI the brief, rubric PDF and actual project facts using A.
-3. Google produces the rubric checklist, design/contracts and ordered execution
-   plan using B. You check it against the brief.
-4. Save B's execution plan as `EXECUTION-PLAN.md` in the assessment project.
-   Give Qoder the short rules and complete agreed plan using C. It can execute
-   several related steps without a new user message for each one.
-5. Run terminal checks and manual user flows yourself. Record real results.
-6. At useful milestones, update the checklist from actual results. Consult Google
-   when the plan needs revision, rather than after every file edit.
-7. Qoder fixes straightforward local errors. Use Google and D for repeated
-   failures, major uncertainty or decisions that would change the design.
-8. Use Qoder E for one final criterion-by-criterion audit against the original
-   PDF, then Google F for review using that evidence. Resolve the identified gaps.
+- **Google:** original brief/rubric PDF, actual starter facts and relevant code.
+- **Qoder:** original brief/rubric PDF, `EXECUTION-PLAN.md` and the short rules.
+- **You:** this playbook. Do not attach the whole playbook as Qoder's standing rules.
 
-Do not ask Qoder to re-plan, repeat full audits after every edit, estimate marks
-or redesign Google's approach. It must still read the original rubric and check
-full coverage before finishing. Avoid an unbounded "keep going until 100%" loop.
+Both tools need readable access to every PDF page, including tables, diagrams
+and full-mark descriptors. If the permitted interface cannot read an attachment,
+provide complete extracted text and readable images of affected sections. Check
+against the original. Resolve unreadable requirements before claiming coverage.
+Google cannot inspect local files unless you supply them. Distinguish proposed
+new files/contracts from actual existing code; avoid speculative replacements.
 
-## Supply the rubric PDF to both tools
+## A. Google: plan once
 
-Attach the original PDF using the permitted interface if supported. If either
-tool cannot read it, provide complete extracted text and readable images of any
-tables, diagrams or scanned pages it cannot parse. Keep page references and
-compare the extraction with the original yourself. Do not substitute a summary
-that drops full-mark qualifiers. Stop planning until unreadable criteria are
-resolved; do not silently treat them as satisfied.
-
-Both tools should identify the rubric's page count, criteria, marks, full-mark
-descriptors and submission constraints. Compare the extracted mark total with
-any stated total and flag discrepancies. Preserve original IDs; assign stable
-IDs only if the rubric has none. Aim to meet every full-mark descriptor, with
-evidence. Neither tool can guarantee the lecturer's eventual grading.
-
-## Give Google enough facts
-
-Google Search AI cannot see your local repository. Supply the file tree,
-manifest/dependency versions, run scripts, relevant starter files and exact
-errors yourself. Start with small relevant excerpts, then provide complete
-files when an exact replacement requires them. Do not send dependencies,
-generated output or the whole repository by default.
-
-If there is no starter, tell Google that explicitly. It can choose the simplest
-stack allowed by the brief and specify the scaffold as the first Qoder task.
-If a stack is mandated, do not spend time comparing alternatives.
-
-Keep one Google conversation for planning. Before a new conversation, preserve
-the current decisions, contracts, rubric checklist, latest files and blockers.
-Search AI output can be wrong: compare requirements with the original text and
-confirm implementation with executed checks. A claimed score is not evidence.
-
-## A. Google Search AI: establish the plan
+Give Google this prompt with the originals and project facts. It should produce
+both the coverage checklist and executable plan in one response when possible.
 
 ```text
-I am working alone in a nine-hour software assessment. Only Qoder and Google
-Search AI are allowed. Qoder has 3,000 credits. You handle requirements analysis,
-architecture, task breakdown, diagnosis and rubric review. Qoder executes your
-precise implementation plans with minimal additional planning.
+I am alone in a nine-hour assessment. Qoder has 3,000 credits. You handle overall
+planning; Qoder implements against the actual repository. Optimize for correct
+completion within time and credits, covering every full-mark rubric descriptor.
 
-Read the original brief and every page of the attached rubric PDF, including
-tables and full-mark descriptors. Confirm page count and flag unreadable pages
-or text; ask for missing source before claiming full coverage. Preserve explicit
-requirements, marks, constraints and submission instructions. Do not invent facts.
+Read the original brief and every rubric PDF page, including tables. Confirm
+page count and flag unreadable source or essential missing facts. Do not invent
+requirements, marks or existing project details.
 
 Return:
-1. A complete rubric checklist: ID, PDF page, exact requirement and full-mark
-   descriptor, marks if supplied, and observable acceptance check. Compare the
-   mark total with any stated total and flag discrepancies. Distinguish supporting
-   tasks from marked items. Target every full-mark descriptor, not just a pass.
-2. One simple implementation design compatible with the required stack/starter.
-   Decide shared data shapes, interfaces and persistence behavior where needed.
-3. Dependency-ordered batches covering every criterion, prioritizing required
-   prerequisites and marks per effort. Include an early working end-to-end flow.
-4. Only the essential missing project facts needed to specify the plan accurately.
+1. A compact COMPLETE coverage checklist: criterion ID/page | full-mark requirement
+   (preserve every qualifier) | marks if supplied | implementation/check milestone.
+   Preserve original IDs; assign stable IDs if absent. Compare the extracted
+   marks with any stated total and flag discrepancies.
+2. One ordered Qoder execution plan. Choose the simplest compatible approach;
+   settle major design decisions and shared contracts. Include an early working
+   end-to-end flow and meaningful verification milestones. Cover every criterion,
+   required technology, non-code deliverable and submission constraint.
+3. For each milestone specify required behavior, relevant files/roles, necessary
+   data/API contracts, validation/error cases and observable acceptance checks.
+   Use actual commands where known; distinguish proposed new scripts/dependencies
+   from existing ones. Leave routine local coding details to Qoder. Do not write
+   the whole application here or compare multiple architectures.
 
-Do not compare multiple architectures or write a long essay. Do not invent
-existing filenames, dependency versions, commands or APIs. Clearly label any
-new files/contracts you propose creating. Once essential facts are supplied,
-prepare to turn the whole plan into the execution format I give you next.
+Allow continuous execution without user approval after every task. Require
+focused checks, bounded repairs and ONE final complete rubric evidence table
+IN CHAT ONLY. No separate audit/status/planning files generated by Qoder.
+Include documentation/tests explicitly required by the rubric or necessary to
+run and verify the work. Stop for essential blockers, required design changes
+or two unsuccessful repairs of the same failure.
 
-ORIGINAL BRIEF AND RUBRIC PDF:
-<attach/reference originals; paste complete text/page images if unreadable>
+If missing facts prevent a correct plan, ask only for those facts. Otherwise
+produce the complete plan now. Label unknowns; do not invent certainty or scores.
 
-ACTUAL PROJECT FACTS:
-<required stack, starter/no starter, file tree, manifest, scripts, relevant code>
+ORIGINAL BRIEF/RUBRIC PDF: <attach/reference originals>
+PROJECT FACTS: <required stack, starter/no starter, tree, manifest, scripts, code>
 ```
 
-Keep the checklist and decisions in a local `HACKATHON-STATUS.md` for yourself.
-Google can format it; update it from actual results. Do not spend Qoder credits
-regenerating it after every task. Include these fields:
+Check the response against the original yourself. Save only the execution plan
+as `EXECUTION-PLAN.md` in the assessment project, ready for Qoder. Keep Google's
+checklist and decisions in the same Google chat or your own notes. A human-held
+`HACKATHON-STATUS.md` is optional; Qoder must not maintain it for you.
+
+## B. Google: repair the plan only if needed
+
+Skip this when A produced a complete usable plan. Do not pay the time cost of
+re-planning a correct approach or generating an unnecessary second full version.
 
 ```text
-Deadline:
-Credits remaining (measured by me):
-Stack, run/check commands and agreed contracts:
-Criterion ID/page | marks | full-mark requirement | milestone | evidence | check/result | gap
-Current blocker and attempted fixes:
-Submission requirements and delivery status:
+Resolve these specific gaps in our existing plan using the original rubric and
+new facts below. Return only the changed sections and affected criterion IDs.
+Preserve valid decisions and coverage. Do not redesign or repeat unchanged text.
+If an essential fact remains missing, ask for it rather than guessing.
+GAPS / NEW FACTS: <exact issues and current relevant code/project facts>
 ```
 
-Use actual criterion IDs and marks; leave unsupplied marks unknown. Distinguish
-implemented behavior from verified behavior and checks not yet run.
+Update your saved execution plan yourself before starting Qoder. If changing a
+plan during implementation, give Qoder only the relevant revision and context.
 
-## B. Google Search AI: produce the Qoder execution plan
+## C. Qoder: implement continuously
 
-Use this after the initial plan. Supply relevant current code when needed;
-Google has no live repository view. Revisit only when the plan needs revision.
+Attach/reference the original brief, full rubric PDF, saved execution plan and
+`QODER-HACKATHON-RULES.md`. Preserve any supplied assessment instructions.
 
 ```text
-Prepare one ordered Qoder execution plan from our agreed design and supplied
-project facts. Settle major design decisions here. Group work into coherent
-testable milestones and allow continuous execution between them. Do not require
-a new user prompt after every file, feature or check.
-
-The prompt must specify:
-- Objective and every rubric ID/page, full-mark requirement and acceptance check.
-  Map each criterion to at least one implementation/verification milestone.
-  Include a final comparison with the original PDF and a complete evidence table.
-- Existing files to read and files to create/change, grounded in supplied facts.
-  If an existing path is unknown and not essential to the design, name its role
-  and relevant symbol so Qoder can locate it with a targeted search.
-- Required behavior and contracts; exact edits only where useful and supported
-  by supplied code. Leave routine local implementation details to Qoder.
-  Keep any replacement contents consistent with the latest code; preserve existing
-  behavior. Do not reproduce large unchanged files unnecessarily.
-- Final signatures, imports, data shapes, API payloads, validation, persistence
-  and error behavior needed for each milestone. Omit irrelevant fields.
-- Dependencies/commands only when supported by the brief and actual project.
-- Observable acceptance checks, including relevant failure cases.
-- Explicit exclusions, relevant checks, milestone reporting and the overall
-  endpoint. Stop for essential blockers, design changes or repeated failures.
-
-If an essential fact is missing, ask for that fact instead of making Qoder
-investigate broadly. Do not invent existing code or leave important contracts
-for Qoder to design. Do not make Qoder re-audit the plan or expand its scope.
-
-CURRENT STATE:
-<starter facts or latest milestone result, relevant code, check results, time>
+Apply QODER-HACKATHON-RULES.md. Read the original brief, full rubric PDF and
+EXECUTION-PLAN.md. Target every full-mark descriptor and implement the plan
+continuously. Use relevant code and existing patterns; do not re-plan or expand
+scope. Run agreed checks at milestones and fix straightforward failures. Stop
+for essential blockers, a required design change or two unsuccessful repairs
+of the same failure. Keep prose terse; do not await replies after progress reports.
+Before finishing, check every rubric criterion and fix scoped omissions. Return
+ONE complete evidence table IN CHAT ONLY. Do not create audit/status documents
+or repeat the table in a summary. Produce required assessment deliverables.
 ```
 
-Use milestones that you can review and check meaningfully. Group related edits
-instead of paying for a request per file. Preserve every required
-criterion across the batches; do not turn "minimal" into incomplete behavior.
-Save the execution plan as `EXECUTION-PLAN.md`; keep the rubric checklist and
-decisions in `HACKATHON-STATUS.md`. Save the original brief/rubric separately.
+Try the important behavior and inspect changes at useful milestones. Run routine
+terminal checks yourself where practical. Save working Git checkpoints. Keep
+real results; an implementation claim is different from executed verification.
 
-## C. Qoder: implement the supplied plan
+## D. Google: diagnose persistent blockers
 
-Use `QODER-HACKATHON-RULES.md` as a short project rule or attach it to the chat.
-Do not load this whole playbook as an always-applied rule. Preserve any supplied
-assessment instructions rather than overwriting them.
-Attach/reference the original brief and rubric PDF alongside the plan. Qoder
-must read the originals once at the start and compare final coverage against
-them. Assessment requirements take precedence over an incorrect plan.
+Use when Qoder is stuck or the agreed design needs reconsideration. Google needs
+current code and actual errors; it does not have a live repository view.
 
 ```text
-Apply the attached QODER-HACKATHON-RULES.md. Read the original brief, every page
-of the rubric PDF and EXECUTION-PLAN.md. Flag unreadable source. Target every
-full-mark descriptor and implement the plan in order. Continue through related
-steps without asking after every task.
-Use existing patterns for local details; do not redesign or expand scope.
-Read relevant code only. Run agreed checks at milestones; fix straightforward
-errors. Stop for missing essential facts, required design changes or two failed
-repairs of the same issue. Keep prose terse. Report at milestones without
-waiting for a reply. Before finishing, compare every original rubric criterion
-with implementation/check evidence and report gaps; do not claim a guaranteed
-score or treat unverified behavior as complete.
+Diagnose this failure from evidence. If the cause is clear, give one narrow
+Qoder fix prompt specifying the change and acceptance check. If unclear, ask
+for the smallest additional excerpt or give me a diagnostic command to run.
+Do not guess, repeat a failed fix or redesign without evidence. Return only
+what is needed to unblock implementation.
+CRITERION / EXPECTED BEHAVIOR: <ID and required behavior>
+REPRODUCTION / COMMAND: <exact steps or command>
+ACTUAL / ERROR: <first useful error and relevant stack frames>
+CURRENT CODE: <relevant files/excerpts>
+ATTEMPTS AND RESULTS: <facts>
 ```
 
-Inspect the diff and manually check required behavior at useful milestones.
-Run routine terminal checks yourself where practical. Qoder can also run agreed
-checks and repair straightforward failures; avoid unlimited repair loops.
+Apply the focused fix and verify it. Preserve full logs locally so you can supply
+more diagnostic context when needed. Do not send irrelevant log dumps by default.
 
-## D. Google Search AI: diagnose and write the fix
+## E. Qoder: final audit only if not already done
+
+C already requests the audit. **Skip E if that final audit exists.** Reuse valid
+checks; run outstanding agreed checks. Do not redo the complete audit after each
+localized fix. Use affected-row updates instead.
 
 ```text
-Diagnose this failure using the actual evidence. Do not send the diagnosis back
-to Qoder as an open-ended investigation. If the cause is clear, produce an exact
-minimal Qoder fix prompt using our execution format. If not, ask for the smallest
-additional file excerpt or give me a specific diagnostic command to run first.
-Do not guess, repeat a failed fix or change architecture without evidence.
-
-TASK / RUBRIC REQUIREMENT: <ID and required behavior>
-EXPECTED: <behavior>
-ACTUAL: <behavior>
-COMMAND / REPRODUCTION: <exact command or steps>
-ERROR: <first useful error and relevant stack frames>
-CURRENT RELEVANT CODE: <files/excerpts>
-ATTEMPTED FIXES AND RESULTS: <facts>
+Apply QODER-HACKATHON-RULES.md. Check the repository against every original
+brief/rubric criterion and full-mark descriptor. Flag unreadable source. Reuse
+valid checks, run outstanding agreed checks and fix scoped omissions within
+the existing design. Stop for required design changes or two failed repairs.
+Return ONE complete compact table IN CHAT ONLY:
+criterion ID/page | implementation evidence | actual check/result | remaining gap.
+Include every criterion and non-code/submission requirement. Mark blocked or
+unverified items, including human checks not supplied. Do not invent results,
+award marks, create audit/status files or duplicate the table elsewhere.
 ```
 
-Run the diagnostic commands yourself. Send the resulting narrow fix to Qoder,
-then rerun the failed check yourself. Preserve full logs locally; send more
-context if the initial excerpt does not establish the cause.
+Copy the response to Google for F. Save it yourself if useful; do not ask Qoder
+to write the same report into the repository. Required assessment documentation
+is still required: this restriction concerns extra process/audit paperwork.
 
-## E. Qoder: final audit against the original rubric PDF
+## F. Google: review coverage, return gaps only
 
-Use once near the end if Qoder has not already produced this audit. Reuse valid
-checks already run; rerun only when relevant changes or unresolved concerns
-justify it. This is the final coverage check, not a request to redesign the app.
+Google reviews the whole rubric against Qoder's final evidence. It should report
+only actionable gaps or confirm no gaps identified in supplied evidence, rather
+than print a second complete table. Supply current code/results if requested.
 
 ```text
-Apply QODER-HACKATHON-RULES.md. Compare the current repository with the original
-brief and EVERY page/criterion/full-mark descriptor in the rubric PDF. Do not
-treat EXECUTION-PLAN.md or previous completion claims as proof. Flag unreadable
-source. For every criterion return:
-ID/page | full-mark requirement | marks if supplied | implementation path |
-implemented/verified/partial/missing/blocked/unverified | actual check/result | gap.
-
-Account for every criterion, including non-code deliverables and submission
-constraints. Run agreed outstanding checks. Fix scoped omissions within the
-existing design, rerun affected checks and update the table; stop for required
-design changes or two failed repairs. Label checks needing human input, access
-or observations unverified until I supply real results. Report remaining gaps
-explicitly. Do not invent results, estimate awarded marks or guarantee 100%.
+Compare EVERY original brief/rubric full-mark descriptor with the evidence below.
+Flag unreadable source. Check all criteria, including submission and non-code
+work. Do not accept unsupported completion claims or invent a score.
+Return ONLY gaps, contradictions or missing verification: criterion ID/page,
+what is missing, smallest next check/fix, priority. If no gaps are identified in
+supplied evidence, say so without claiming a guaranteed score. Do not duplicate
+Qoder's complete table. For a supported fix, give a focused Qoder prompt; for
+uncertainty, request the smallest missing fact/code/result first.
+ORIGINAL BRIEF/RUBRIC: <original attachments or complete readable extraction>
+EVIDENCE: <Qoder final chat table, actual results, relevant code as needed>
+TIME / CREDITS REMAINING: <actual values>
 ```
 
-Keep the resulting table in `HACKATHON-STATUS.md`. Supply it to Google with
-prompt F, plus current relevant code and real check results when needed.
+After a fix, update affected criteria only. Repeat broader checks/review when
+cross-cutting changes or unresolved concerns invalidate earlier results.
 
-## F. Google Search AI: review rubric evidence
+## Credit and time controls
 
-```text
-Read every page of the original rubric PDF and the original brief again.
-Compare every full-mark descriptor with the current evidence below, including
-Qoder's audit table. Flag unreadable source. For every criterion give:
-ID/page | full-mark requirement | implemented/verified/partial/missing/unknown |
-actual supporting evidence | remaining gap. Distinguish code claims from checks
-actually run. You cannot inspect my local app; mark unsupported claims unknown
-and tell me exactly what to inspect, run or supply. Do not invent a score.
+- One user prompt can trigger many model calls. Compare actual credit usage and
+  correct completed work, rather than prompt count or reply length alone.
+- Give the complete plan once. Keep related work in the same conversation.
+  At a genuine new task/context boundary, provide a concise current-state handoff.
+- Use terse precise instructions and reports. Preserve qualifiers, negations,
+  identifiers and test evidence. Do not install elaborate compression machinery
+  during the exam; shorter prose alone does not reduce all agent/token costs.
+- Keep file reads and tool output relevant. Avoid repeated repository scans,
+  sub-agents, repo wikis, duplicate reports and unlimited repair loops.
+- A prompt cannot enforce credit caps or turn off internal reasoning. Watch the
+  actual account balance and use available model/effort controls.
 
-Check submission requirements as well as application behavior. Prioritize gaps
-by dependencies, marks, remaining time and regression risk. Produce the next
-precise Qoder fix prompt only when current code/evidence supports it. Otherwise
-give me the smallest fact-gathering step. Keep every criterion accounted for.
-
-ORIGINAL BRIEF/RUBRIC PDF: <original attachments or complete readable extraction>
-CURRENT EVIDENCE: <checklist, relevant code, commands/results, manual observations>
-TIME REMAINING: <time>
-```
-
-## Token reduction: concise instructions and controlled context
-
-- Give the complete agreed plan once. Do not confuse one user message with one
-  model call: an agent can invoke the model repeatedly while executing it.
-- Use short headings and precise requirements. Remove pleasantries, repeated
-  explanations and duplicate rules. Preserve negations, exact identifiers,
-  constraints and acceptance checks. Shorter prompts must remain unambiguous.
-- Ask for terse reports rather than narrated edits or repeated full-file output.
-  Caveman-style prose compression does not itself reduce code-reading or hidden
-  reasoning tokens; added style rules can also consume input tokens.
-- Keep file reads/searches relevant and command output bounded. Preserve complete
-  errors locally so important diagnostic evidence can be retrieved when needed.
-- Choose a cheaper capable model for small, well-specified edits. Use stronger
-  reasoning when task difficulty or repeated failures justify its cost.
-- Compare real credit consumption and correct completed behavior. Fewer words
-  or fewer prompts alone do not prove a cheaper successful implementation.
-
-References: [Qoder credit accounting](https://docs.qoder.com/Credits),
-[Caveman author's limitations](https://raw.githubusercontent.com/JuliusBrussee/caveman/main/docs/HONEST-NUMBERS.md).
-
-## Qoder settings and spending
-
-A prompt cannot turn off internal reasoning or enforce a credit cap. Use the
-available model/effort controls in your installed client: choose the cheapest
-capable model and low reasoning effort, or disable thinking if supported, for
-precise edits. Increase capability only when a concrete task requires it. Check
-actual usage rather than assuming a short response means little computation.
-
-Avoid sub-agents, premium orchestration, repo wikis and broad autonomous tasks.
-Keep related edits together; use a new chat at a genuine task boundary with
-only the short rules, execution prompt and necessary context. Do not repeatedly
-restart a continuing fix and pay for rediscovery.
-
-Current Qoder documentation lists a temporary free Efficient tier for eligible
-paid users. Verify your event account's actual selector/rate and eligibility;
-do not base the plan on receiving this offer or an unlimited free fallback.
-
-Your selector showed these rates on 31 October. Recheck them on the day:
+Your selector showed these rates on 31 October; recheck on the day:
 
 | Tier | Shown rate | Suggested use |
 | --- | ---: | --- |
-| Efficient | 0.0x | Start with a clear implementation task and verify the result |
-| Auto | 0.5x | More involved work or when Efficient struggles |
-| Fast | 0.8x | Faster turnaround; replaces the former Performance tier |
+| Efficient | 0.0x | Start with a well-specified task; verify quality and speed |
+| Auto | 0.5x | More involved implementation or when Efficient struggles |
+| Fast | 0.8x | Faster turnaround; successor to Performance |
 | Ultimate | 2.0x | A specific difficult blocker when cheaper attempts fail |
 
-This is a suggested escalation order, not a guarantee of task quality or cost.
-Source: [Performance became Fast](https://docs.qoder.com/product-overview/fast-mode-announcement).
+The free Efficient offer has eligibility/availability conditions. Do not rely on
+it remaining available or on free use eliminating the nine-hour time constraint.
 
-| Qoder work | Credit envelope |
+| Spending envelope | Credits |
 | --- | ---: |
-| Scaffold and required implementation | 2,000 |
-| Precise corrections from external diagnosis | 400 |
-| Protected reserve for late required gaps/blockers | 600 |
+| Required scaffold and implementation | 2,000 |
+| Focused corrections | 400 |
+| Protected reserve for late gaps/blockers | 600 |
 | Total | 3,000 |
 
-These are spending envelopes, not usage predictions or automatic limits. Check
-balance before/after each batch and adjust using actual cost. With 600 credits
-left, reserve them for required gaps and submission blockers.
+These are envelopes, not forecasts or automatic limits. At 1,200 remaining,
+review outstanding requirements and stop optional polish. Preserve the last 600
+for required gaps and submission blockers. Never drop an explicit rubric item
+merely to save tokens; remove unnecessary process work first.
+
+| Elapsed time | Target |
+| --- | --- |
+| 00:00-00:30 | Read originals; Google produces coverage and plan |
+| 00:30-01:00 | Resolve essential facts; start runnable baseline and submission setup |
+| 01:00-06:00 | Qoder implements continuously; you check/save milestones |
+| 06:00-07:30 | One final Qoder audit; Google gap review; scoped fixes |
+| 07:30-08:15 | Final checks, manual flows, required README and fresh-copy rehearsal |
+| 08:15-09:00 | Submit and verify delivery; retain buffer for blockers |
+
+Use the actual deadline and submission rules supplied on the day, rather than
+the older practice sheet's 17:00 cutoff. Follow the app's required run instructions
+in a fresh copy. If Git delivery is required, commit, push, verify the remote
+commit/access and complete the submission action before the deadline.
 
 Sources checked 31 October 2026:
 [credit accounting](https://docs.qoder.com/Credits),
-[model/effort controls and offers](https://docs.qoder.com/user-guide/chat/model-tier-selector),
-[project rules](https://docs.qoder.com/user-guide/rules).
-The installed client's available controls and displayed rates govern.
-
-## Nine-hour schedule and submission
-
-| Elapsed time | Work |
-| --- | --- |
-| 00:00-00:30 | Read brief; Google extracts rubric and specifies the design |
-| 00:30-01:00 | Supply project facts; execute scaffold/baseline task; run it |
-| 01:00-06:00 | Qoder executes the agreed plan; you check/save milestones |
-| 06:00-07:30 | Google reviews evidence; execute specific gap fixes; verify integration |
-| 07:30-08:15 | Required build/tests, manual flows, README and fresh-copy rehearsal |
-| 08:15-09:00 | Complete and verify submission; use buffer for blockers |
-
-- Track every original requirement, including documentation and non-code work.
-- Run the required final checks and important user flows. Follow only the README
-  in a fresh working copy to expose hidden setup assumptions.
-- Use the new brief's deadline and submission/access rules; do not reuse the
-  older practice sheet's 17:00 deadline automatically.
-- If Git delivery is required, commit, push and verify the remote commit and
-  required marker access before the deadline. Confirm the submission itself.
-- Retain honest results: implemented is different from verified. Full marks
-  depend on satisfying the actual rubric; no prompt can guarantee the score.
+[model controls/offers](https://docs.qoder.com/user-guide/chat/model-tier-selector),
+[Performance became Fast](https://docs.qoder.com/product-overview/fast-mode-announcement),
+[Caveman limitations](https://raw.githubusercontent.com/JuliusBrussee/caveman/main/docs/HONEST-NUMBERS.md).
+The current account selector, actual usage and exam requirements govern.
