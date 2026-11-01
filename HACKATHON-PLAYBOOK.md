@@ -1,7 +1,10 @@
-﻿# Nine-hour hackathon: Google plans, Qoder checks once and implements
+﻿# Eight-hour hackathon: Google plans, Qoder checks once and implements
 
 For Monday, 2 November 2026: one person, 3,000 Qoder credits. You confirmed Qoder
 and Google Search AI are allowed. Prepared materials must follow the exam's rules.
+The lecturer's 1 November announcement mentions eight hours to work on code.
+Use eight hours as a conservative planning window pending the next announcement
+and actual brief; use their exact start/deadline when published.
 
 The rehearsal exposed errors in Google's proposed technical details. Use Google
 for complete rubric coverage, priorities and a proposed architecture. Give Qoder
@@ -10,6 +13,11 @@ routine commands, provide real results and submit. This workflow aims to reduce
 avoidable work; actual time/credit savings and the eventual score are not guaranteed.
 
 ## Inputs and Gitea
+
+Before the exam, use [EXAM-PREP.md](EXAM-PREP.md) to record editor/terminal
+preferences and select a visual direction. Do not feed that human checklist to
+Qoder. Supply just the chosen stack/style below; avoid spending coding time on
+new plugins or a new design system.
 
 Give both tools the original brief and full rubric PDF, including every page,
 table and descriptor. Resolve unreadable source with complete text/page images;
@@ -30,7 +38,9 @@ evidence and one minimal recommendation. Do not insist on implementing a known f
 ## A. Google: plan once
 
 ```text
-I am alone in a nine-hour assessment with 3,000 Qoder credits. You are the overall
+I am alone with 3,000 Qoder credits. Plan within eight hours unless the supplied
+exam instructions specify otherwise. Include all setup/checks/submission in this
+conservative window; do not assume extra time beyond the actual deadline. You are the overall
 planner responsible for a complete, technically consistent implementation plan.
 Qoder implements it. I run routine commands and submit through my supplied Gitea
 repository/branch.
@@ -50,7 +60,10 @@ that single file, using descriptive Markdown headings and checklist tables:
    cumulative tier dependency and non-code requirement. Flag mark discrepancies.
 2. One suitable proposed architecture: stack/libraries, modules, data/storage
    responsibilities, important interface behavior and relevant performance strategy.
-   Follow supplied starter/stack constraints; otherwise make the choices yourself.
+   Follow supplied starter/stack constraints; otherwise use my provisional familiar
+   stack where suitable, making remaining choices yourself. Preserve my visual
+   direction and define a coherent layout, typography and colour system; avoid
+   generic decorative effects unrelated to that direction.
    No menu of alternatives. Make overall design choices; leave exact schema DDL,
    parser implementation, dependency versions and executable commands to Qoder
    using the actual project. State uncertainty instead of guessing.
@@ -109,6 +122,12 @@ facts that materially block a correct plan; otherwise produce the plan now.
 ORIGINAL BRIEF/RUBRIC: <attach/reference full originals>
 PROJECT FACTS: <mandated stack, starter/no starter/unknown, tree, scripts, code>
 GITEA EXAM URL / BRANCH: <actual values or unknown>
+PROVISIONAL STACK: <familiar language/framework/database, or unknown>
+VISUAL DIRECTION: Editorial: charcoal text, cream backgrounds, burnt-orange accents.
+Strong headings, generous whitespace, subtle dividers and aligned data. Use clear
+navigation, labelled controls and visible keyboard focus. Include loading/empty/
+error/success states and adapt to narrower windows. Follow required branding and
+accessibility rules; keep this coherent style without optional redesigns.
 ```
 
 Check coverage yourself. Copy the entire Markdown block (including the rubric
@@ -116,7 +135,7 @@ checklist) into a new text file in the **exam project's root folder**, named
 exactly `EXECUTION-PLAN.md`. Save as UTF-8 plain text, without the surrounding
 code fences; check it is not named `EXECUTION-PLAN.md.txt`. Google supplies the
 contents; you save it. No Qoder request or Google Docs/PDF conversion is needed.
-For the old Test 1 rehearsal, explicitly override nine hours with its stated
+For the old Test 1 rehearsal, explicitly override eight hours with its stated
 2.5 hours; tomorrow's actual brief remains authoritative.
 
 ## B. Google: focused plan correction only if needed
@@ -271,16 +290,16 @@ stop at a safe milestone and reassess if the burn rate is too high. At 1,200
 remaining, review gaps and stop optional polish. Protect the last 600 for required
 gaps and delivery. Never drop explicit rubric items merely to save tokens.
 
-## Nine-hour targets
+## Eight-hour targets
 
 | Elapsed time | Target |
 | --- | --- |
-| 00:00-00:30 | Read originals; Google coverage and proposed plan |
-| 00:30-01:00 | One Qoder preflight, essential corrections, runnable baseline |
-| 01:00-06:00 | Continuous implementation; human checks and working checkpoints |
-| 06:00-07:30 | One final audit, Google gap review and scoped fixes |
-| 07:30-08:15 | Required final checks, user flows, README and fresh-copy rehearsal |
-| 08:15-09:00 | Submit, verify Gitea commit/access and actual submission; buffer |
+| 00:00-00:30 | Two quiet minutes; read originals; set up/verify Gitea remote and initial push; Google plan |
+| 00:30-00:45 | Quick C1, essential corrections and start baseline implementation |
+| 00:45-05:30 | Continuous implementation; roughly hourly human workflow checks, commits and pushes |
+| 05:30-06:30 | One final rubric reconciliation and scoped fixes; optional Google gap review |
+| 06:30-07:15 | Required final checks, user flows, README and fresh-copy rehearsal |
+| 07:15-08:00 | Submit, verify Gitea commit/access and actual submission; buffer |
 
 Use the actual start, deadline, stack and submission rules from tomorrow's brief.
 The older practice sheet's 17:00 cutoff is not assumed. Git push alone may not

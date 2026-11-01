@@ -10,6 +10,26 @@ Yes—your exam sequence is:
 
 Qoder finishes with the rubric evidence table **in chat**.
 
+Lecturer update (1 November): plan conservatively for **eight hours**, pending
+the next announcement and actual brief. Set up Git and push early, then roughly
+hourly commit/push and personally use the app from start to finish. You handle
+these checks; Qoder cues them alongside milestones without extra reports.
+
+Tonight: choose a provisional familiar stack and a simple visual direction
+(colours, typography/layout/style), then supply both to Google A. Prepare permitted
+Markdown files via Moodle upload as instructed, note plugins/environment settings,
+check the promised exam announcement, get a full night's sleep and arrive early.
+At the start, take two quiet minutes before working.
+
+Use [EXAM-PREP.md](EXAM-PREP.md) tonight for the small plugin/environment shortlist,
+visual style options and browser checklist. It is for you; do not add the whole
+prep sheet to Qoder's context. Supply only your chosen stack and short visual brief
+to Google A. Frontend polish complements the actual rubric's functional requirements.
+
+Your selected default is **editorial: charcoal, cream and orange**, with strong
+headings, generous whitespace and clear, aligned data. Prompt A already includes
+this direction; the actual brief's branding/accessibility requirements take precedence.
+
 ---
 
 **Google plans. Qoder checks once, then codes. You run commands and submit.**
@@ -52,7 +72,7 @@ reloading everything. This reduces avoidable context, not guaranteed credit usag
 6. **Watch results and credits.** Save working checkpoints. After two failed
    repairs of the same issue, stop the loop; use Google D with real evidence.
    Check actual balance after milestones and protect **600 credits for late gaps**.
-7. **Final coverage:** around hour 6, Qoder checks every original criterion and
+7. **Final coverage:** around hour 5.5, Qoder checks every original criterion and
    returns one compact evidence table **in chat only**. Use E only if that audit
    is missing. Optionally give Google F the evidence; send only actionable gaps to Qoder.
    Update affected rows after fixes instead of regenerating reports.

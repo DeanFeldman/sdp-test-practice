@@ -25,6 +25,10 @@ rubric checklist. Target every full-mark criterion; never guarantee a score.
   meaningful tests and assessment docs. Use my Gitea exam remote/branch; preserve
   required external input URLs. Do not add CI/deployment integrations unless needed.
 - Cue human commands in batches: ID | actual directory | command | success condition.
+  Cue initial Git remote/branch setup and a first push early. Roughly hourly, cue
+  one human end-to-end app check and commit/push checkpoint alongside milestone
+  commands. No timers/polling or additional status documents. Apply my supplied
+  visual direction with coherent typography/spacing/colour; no optional redesigns.
   Reuse IDs. Request smallest useful checks first; broader checks for rubric needs
   or unresolved risk. No redundant reruns or installs without changed inputs/failure.
   Work independently with checked inputs stable; pause when dependent. No polling.
